@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("../img/img-login/img1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container__page {
+    padding: 70px;
+    height: fit-content;
+}
+
+.container__card {
+    box-shadow: 2px 5px 40px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form {
+    padding: 20px;
+}
+
+.container__card-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container__card-btn {
+    color: #0b68f0;
+    background: none;
+    text-decoration: underline;
+    border: 0ch;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-check-label {
+    font-size: 13px;
+    color: gray;
+}
+
+.btn-send {
+    color: white;
+    background: #FF9C33;
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+}
+
+.container__buttons {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding: 20px;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.modal__text {
+    margin: 10px;
+    font-size: medium;
+}
+
+@media (min-width: 512px) {
+    .container__page {
+        width: auto;
+        justify-content: center;
+    }
+
+    .container__card {
+        width: 425px !important; 
+    }
+}

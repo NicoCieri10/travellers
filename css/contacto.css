@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    background-image: url(../img/img-contacto/travel5.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    display: flex;
+}
+
+
+.container{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+.titulo{
+    text-align: center;
+    color: #FF9C33;
+    margin-bottom: 8px;
+}
+
+.name, .email, .text{
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.name, .email{
+    padding: 10px 10px;
+}
+
+.text{
+    resize: none;
+}
+
+.boton{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: center;
+    background: #FF9C33;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton:hover{
+    border:2px solid #FF9C33;
+    color: #FF9C33;
+    background: #F2F3F4;
+}
+
+.container-map{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.map{
+    width: 100%;
+    margin-top: 15px;   
+}
+
+.titulo-map{
+    text-align: center;
+    color: #FF9C33;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 15px 0px;
+}
+
+@media (min-width: 768px){
+    .form{
+        
+        width: 400px;
+        
+    }
+
+    .boton{
+        width: 100px;
+        margin-left: 260px;
+    }
+
+    .container-map{
+        width: 400px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .form{
+        
+        width: 700px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        
+    }
+
+    .container{
+        flex-direction: row;
+        width: 90%;
+        align-items: center;
+        height: 700px;
+    }
+
+    .name, .email, .text{
+        width: 450px;
+    }
+
+    .boton{
+        margin-left: 350px;
+    }
+
+    .container-map{
+        width: 700px;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+
+
+    .map{
+        height: 350px;
+    }
+
+    .titulo-map{
+        margin-bottom: 0;
+    }
+}

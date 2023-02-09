@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="cocoders">
+  <meta name="description" content="blog">
+  <meta name="keywords" content="travel, blog, turism">
+  <link rel="icon" href="img/icon.jpeg">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/aboutus.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHE">
+  <title>Travellers Blog</title>
+  <style>
+    .bg-orange {
+      background-color: #E07E17;
+    }
+
+    .bg-grey {
+      background-color: #dbdbdb;
+    }
+
+    .bg-nav {
+      background: rgba(85, 84, 84, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="header">
+    <img class="header__logo" src="./img/travellers.png" alt="logo">
+    <nav class="header__nav">
+      <div class="home">
+        <a class="header__nav-link" href="./index.html" target="_self">Home</a>
+        <a class="header__nav-link" href="./pages/aboutus.html" target="_self">Sobre Nosotros</a>
+        <a class="header__nav-link" href="../pages/contacto.html" target="_blank">Contacto</a>
+      </div>
+      <div class="contac">
+        <div class="login__link">
+          <a class="link" href="./pages/login.html" target="_blank">Login</a>
+        </div>
+        <div class="sub__link">
+          <a class="link" href="./pages/register.html" target="_blank">Registrarse</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--NavMobile-->
+  <nav class="nav__mobile">
+    <div class="navbar navbar-expand-lg bg-nav d-lg-none position-fixed fixed-top flex-row">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="header__logo" src="./img/travellers.png" alt="logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler bg-orange" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid collapse" id="navbarToggleExternalContent">
+          <div class="p-5">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-5">
+              <li class="nav-item">
+                <a class="header__nav-link" href="./index.html" target="_self">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="header__nav-link" href="./pages/aboutus.html" target="_self">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="header__nav-link" href="../pages/contacto.html" target="_blank">Contacto</a>
+              </li>
+            </ul>
+            <div class="contac">
+              <div class="login__link">
+                <a class="link" href="./pages/login.html" target="_blank">Login</a>
+              </div>
+              <div class="sub__link">
+                <a class="link" href="./pages/register.html" target="_blank">Registrarse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Carrousel-->
+  <div class="container__carrousel">
+    <div id="carouselExampleIndicators" class="carousel slide d-sm-none d-lg-block" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+      </div>
+      <div class="carousel-inner" style="height: 700px; width: 100%;">
+        <div class="carousel-item active">
+          <img src="./img/slide/africa-2.jpg" class="img-1 d-block w-100" alt="elefantes africa">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/africa.jpg" class="img-2 d-block w-100" alt="piramides egipto">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/america-2.jpg" class="img-3 d-block w-100" alt="monumento nueva york">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/america.jpg" class="img-4 d-block w-100" alt="monumento san pablo">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/asia-2.jpg" class="img-5 d-block w-100" alt="templo china">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/asia.jpg" class="img-6 d-block w-100" alt="palacio india">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/europa-2.jpg" class="img-7 d-block w-100" alt="playa grecia">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slide/europa.jpg" class="img-8 d-block w-100" alt="paris">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="main__title">Ultimos Destinos</h1>
+  </div>
+  <!--Cards-->
+  <div class="container__cards">
+    <div class="cards bg-white d-flex px-0 mt-3 border-ligh justify-content-center justify-content-xl-evenly">
+      <div class="card mb-3 text-dark">
+        <div class="card-body">
+          <img src="img/cards/asia.jpg" class="card-img-top rounded" alt="monte everest">
+          <div class="card-img-overlay">
+            <div class="container__img rounded"></div>
+            <h5 class="card-title">Asia</h5>
+            <p class="card-text">Si te interesa la historia milenaria y queres aprender sobre una cultura fascinante
+              este viaje es perfecto para vos.</p>
+            <a href="./pages/entrada-blog.html" class="button" target="_self">Ver más</a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__location">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p class="card__bottom-text"> Monte Everest</p>
+            </div>
+            <div class="card__comments">
+              <i class="bi bi-chat-heart-fill"></i>
+              <p class="card__bottom-text"> Comentarios (35) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3 text-dark">
+        <div class="card-body">
+          <img src="img/cards/america.jpg" class="card-img-top rounded" alt="machu pichu">
+          <div class="card-img-overlay">
+            <div class="container__img rounded"></div>
+            <h5 class="card-title">America</h5>
+            <p class="card-text">Un continente lleno de colores y sabor. Culturas que te sorprenderán y harán que tu
+              viaje sea inolvidable.</p>
+            <a href="./pages/error404.html" class="button" target="_self">Ver más</a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__location">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p class="card__bottom-text"> Machu Pichu</p>
+            </div>
+            <div class="card__comments">
+              <i class="bi bi-chat-heart-fill"></i>
+              <p class="card__bottom-text"> Comentarios (72) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3 text-dark">
+        <div class="card-body">
+          <img src="img/cards/europa.jpg" class="card-img-top rounded" alt="roma">
+          <div class="card-img-overlay">
+            <div class="container__img rounded"></div>
+            <h5 class="card-title">Europa</h5>
+            <p class="card-text">Desarrollamos los mejores packs con los mejores museos y visitas guiadas a las
+              ciudades
+              mas antiguas de Europa.</p>
+            <a href="./pages/error404.html" class="button" target="_self">Ver más</a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__location">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p class="card__bottom-text">Roma</p>
+            </div>
+            <div class="card__comments">
+              <i class="bi bi-chat-heart-fill"></i>
+              <p class="card__bottom-text"> Comentarios (68) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card mb-3 text-dark">
+        <div class="card-body">
+          <img src="img/cards/africa.jpg" class="card-img-top rounded" alt="safari">
+          <div class="card-img-overlay">
+            <div class="container__img rounded"></div>
+            <h5 class="card-title">Africa</h5>
+            <p class="card-text">¿Que esperas para conocer la fauna más extraodinaria del mundo? Este destino es solo
+              para los aventureros.</p>
+            <a href="./pages/error404.html" class="button" target="_self">Ver más</a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__location">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p class="card__bottom-text"> Sudafrica</p>
+            </div>
+            <div class="card__comments">
+              <i class="bi bi-chat-heart-fill"></i>
+              <p class="card__bottom-text"> Comentarios (15) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Paginacion-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination rounded">
+      <li class="page-item">
+        <a class="page-link bg-orange" href="./pages/error404.html" target="_self" aria-label="Previous">
+          <i class="bi bi-arrow-left-circle-fill text-light"></i>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link bg-orange text-light" target="_self" href="./pages/error404.html">1</a>
+      </li>
+      <li class="page-item "><a class="page-link bg-orange text-light" target="_self" href="./pages/error404.html">2</a>
+      </li>
+      <li class="page-item"><a class="page-link bg-orange text-light" target="_sel2" href="./pages/error404.html">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link bg-orange" href="./pages/error404.html" target="_self" aria-label="Next">
+          <i class="bi bi-arrow-right-circle-fill text-light"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--ListaMobile-->
+  <div
+    class="navbar navbar-expand-lg bg-orange rounded-start d-flex align-items-center justify-content-center d-lg-none  d-flex flex-columns">
+    <div class="mobile container-fluid d-flex flex-columns">
+      <a class="navbar-brand" target="_self" href="#" style="height: 50px;">
+        <p class="text-light mt-1"> Continentes </p>
+      </a>
+      <ul class="navbar-nav d-flex flex-columns">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" target="_self" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Asia
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-orange border-0">
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">China</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Japon</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">India</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" target="_self" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            América
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-orange border-0">
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Peru</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Argentina</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Brasil</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" target="_self" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Europa
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-orange border-0">
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Italia</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Francia</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Dinamarca</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" target="_self" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            África
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark  bg-orange border-0">
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Egipto</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Sudafrica</a></li>
+            <li><a class="dropdown-item text-light" target="_self" href="./pages/gallery-page.html">Kenia</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Lista-->
+  <div class="container__list d-none d-lg-flex">
+    <div class="bg-orange rounded-start d-flex align-items-center justify-content-center" style="width: 200px;">
+      <p class="text-light pt-3"> Continentes </p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-grey rounded-end" style="width: 100%;">
+      <div class="container-fluid rounded">
+        <div class="collapse navbar-collapse " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" target="_self" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Asia
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-grey">
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">China</a></li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Japon</a></li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">India</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" target="_self" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                América
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-grey">
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Peru</a></li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Argentina</a>
+                </li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Brasil</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" target="_self" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Europa
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-grey">
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Italia</a></li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Francia</a>
+                </li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Dinamarca</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" target="_self" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                África
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark bg-grey">
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Egipto</a></li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Sudafrica</a>
+                </li>
+                <li><a class="dropdown-item text-dark" target="_self" href="./pages/gallery-page.html">Kenia</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Form-->
+  <div class="container__form">
+    <div class="container__form-lg">
+      <h3 class="form__tittle">Usá el <span>buscador</span> para obtener más <span> información </span>sobre nuestros
+        viajes</h3>
+      <p class="form__text"> Artículos en los que el turismo es protagonista, como una vía de escape de la realidad
+        cotidiana, y siempre unido a la geografía y los mapas.
+      </p>
+    </div>
+    <form class="form_articulos">
+      <input class="form__input border-0" type="text" placeholder="Articulos">
+      <button class="form__button" type="submit">Buscar <i class="bi bi-search text-light ms-2"></i></button>
+    </form>
+  </div>
+  <!--Soponsors-->
+  <h2 class="add__tittle">Nuestros <span>Sponsors</span></h2>
+  <div class="add__container row">
+    <div class="add__container-airbnb d-none d-sm-block col-8 col-md-4 col-lg-3"></div>
+    <div class="add__container-hilton--black d-none d-md-block col-md-4 d-lg-none "></div>
+    <div class="add__container-hilton bg-orange d-none d-lg-block col-8 col-lg-3"></div>
+    <div class="add__container-aa d-none d-sm-block col-8 col-md-4  col-lg-3"></div>
+    <div class="add__container-montagne d-none d-sm-block col-8 col-md-4 col-lg-3"></div>
+    <div class="add__container-jeep d-none d-sm-block col-8 col-md-4 col-lg-3"></div>
+    <div class="add__container-booking d-none d-sm-block col-8 col-md-4 col-lg-3"></div>
+  </div>
+  <!--Button-->
+  <div class="container__js">
+    <h2 class="button__tittle"> ¿A qué <span> destino </span>puedo ir hoy?</h2>
+    <p class="button__text">Presiona el botón y descubre tu proximo destino.</p>
+    <div class="container__button">
+      <button class="button__random" id="generate-button">Destino</button>
+      <div class="button__random-text" id="destination-display"></div>
+    </div>
+  </div>
+  <script>
+    function generateDestination() {
+      const destinations = [
+        "Paris, Francia",
+        "Roma, Italia",
+        "Londres, Inglaterra",
+        "Sydney, Australia",
+        "Nueva York, Estados Unidos",
+        "Barcelona, España",
+        "Tokyo, Japon",
+        "Singapur, Singapur",
+        "Cancun, Mexico",
+        "Maui, Hawaii"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * destinations.length);
+      return destinations[randomIndex];
+    }
+
+    const button = document.getElementById("generate-button");
+
+    button.addEventListener("click", () => {
+      const destination = generateDestination();
+      const destinationDisplay = document.getElementById("destination-display");
+      destinationDisplay.textContent = destination;
+    });
+  </script>
+  <!--gallery-->
+  <div class="container__gallery">
+    <a class="link__gallery" target="_self" href="./pages/gallery-page.html">Galería</a>
+  </div>
+
+  <!--Footer Tomas-->
+  <section class="footer">
+    <div class="footer__container">
+      <div class="footer__container-logo">
+        <img class="footer__img" src="./img/travelers-white.png" alt="logo">
+        <h5 class="footer__cocoders">© 2022 Creado por CoCoders</h5>
+      </div>
+      <div class="footer__container-redes">
+        <h4 class="footer__redes">Nuestras Redes</h4>
+        <div class="footer__container-icon">
+          <a href="./pages/error404.html">
+            <i class="footer__icon bi bi-instagram"></i>
+          </a>
+          <a href="./pages/error404.html">
+            <i class="footer__icon bi bi-facebook"></i>
+          </a>
+          <a href="./pages/error404.html">
+            <i class="footer__icon bi bi-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__container-contact">
+        <a class="footer__contact" href="" target="_self">Contactanos</a>
+        <form class="footer__container-newsletter">
+          <Label class="footer__label">Suscribete a nuestro Newsletter</Label>
+          <input class="footer__input" type="text" name="footer_name" placeholder="Nombre*" required>
+          <input class="footer__input" type="email" name="footer_email" placeholder="Ingrese su email aqui*" required>
+          <button class="footer__button">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
