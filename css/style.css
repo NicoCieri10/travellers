@@ -544,6 +544,8 @@ span {
 .add__container {
     display: flex;
     flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0px;
     justify-content: center;
 }
 
